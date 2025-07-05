@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ameer: Designed in 8 Colors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- START SCREEN -->
+  <div id="start-screen">
+    <div class="start-content">
+      <h2>Ready to see how much I love you, birthday boy? <span class="teddy">🧸</span></h2>
+      <button id="start-btn">Start 💖</button>
+    </div>
+  </div>
+
+  <!-- FLOATING EMOJIS -->
+  <div class="floating-emojis">🏎️✨🧸❤️💖💫</div>
+
+  <!-- MAIN TITLE -->
+  <h1 class="title">Ameer: Designed in 8 Colors</h1>
+
+  <!-- COLOR LOVE CARDS -->
+  <div class="card-container">
+    <!-- CARD 1 -->
+    <div class="card" style="--card-color: #ff0800;">
+      <div class="card-front">🔥</div>
+      <div class="card-back">You’re the fire that keeps me going</div>
+    </div>
+    <!-- CARD 2 -->
+    <div class="card" style="--card-color: #89CFF0;">
+      <div class="card-front">🩵</div>
+      <div class="card-back">You calm me like skies after storms</div>
+    </div>
+    <!-- CARD 3 -->
+    <div class="card" style="--card-color: #800020;">
+      <div class="card-front">🍷</div>
+      <div class="card-back">Your love runs deep like wine</div>
+    </div>
+    <!-- CARD 4 -->
+    <div class="card" style="--card-color: #280137;">
+      <div class="card-front">🌙</div>
+      <div class="card-back">You’re the night I never stop dreaming in</div>
+    </div>
+    <!-- CARD 5 -->
+    <div class="card" style="--card-color: #ffffff; color: #000;">
+      <div class="card-front">🕊️</div>
+      <div class="card-back">Your heart is so pure and sweet</div>
+    </div>
+    <!-- CARD 6 -->
+    <div class="card" style="--card-color: #000000;">
+      <div class="card-front">🖤</div>
+      <div class="card-back">I’d still choose you in the dark</div>
+    </div>
+    <!-- CARD 7 -->
+    <div class="card" style="--card-color: #818B7A;">
+      <div class="card-front">🌿</div>
+      <div class="card-back">With you, I’ve grown into who I am</div>
+    </div>
+    <!-- CARD 8 -->
+    <div class="card" style="--card-color: #ff77ff;">
+      <div class="card-front">💗</div>
+      <div class="card-back">You’re my softest, forever kinda love</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">Happy Birthday, my baby 🧸🎂💋</footer>
+
+  <!-- JS -->
+  <script>
+    const startBtn = document.getElementById("start-btn");
+    const startScreen = document.getElementById("start-screen");
+
+    startBtn.addEventListener("click", () => {
+      startScreen.classList.add("hide");
+    });
+
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+      });
+    });
+  </script>
+</body>
+</html>
